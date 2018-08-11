@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Warm Winter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Search page</h1>
+    {% for service in all_service %}
+        <div>
+            {% if service.gender == 1 %}
+                <img src="../static/image/male-profile.jpg">
+            {% else %}
+                <img src="../static/image/female-profile.jpg">
+            {% endif %}    
+            <br>
+            <b>Tên: {{service.name}} </b>
+            <p>Năm sinh: {{service.yob}} </p>
+            <p>Chiều cao: {{service.height}} </p>
+            <p>Địa chỉ: {{service.address}} </p>
+            <p>Số điện thoại: {{service.phone}} </p>
+            <hr>
+        </div>
+    {% endfor %}
+</body>
+</html>

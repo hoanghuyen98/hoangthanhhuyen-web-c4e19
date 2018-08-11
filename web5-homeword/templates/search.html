@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Warm Winter</title>
+</head>
+<body>
+    <h1>Search page</h1>
+    {% for service in all_service %}
+        <div>
+            {% if service.gender == 1 %}
+                <img src="../static/image/male-profile.jpg">
+            {% else %}
+                <img src="../static/image/female-profile.jpg">
+            {% endif %}    
+            <br>
+            <b>{{service.name}} </b>
+            <p>{{service.yob}} </p>
+            <p>{{service.height}} </p>
+            <p>
+                <a href="{{url_for('detail',service_id= service.id)}}"> Chi tiết </a>
+            </p>
+            <hr>
+        </div>
+    {% endfor %}
+</body>
+</html>

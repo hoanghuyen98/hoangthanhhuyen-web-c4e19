@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Database intro</title>
+
+</head>
+<body>
+    <h1>Information Customer </h1>
+    <h3><a href=" {{url_for('index')}} ">Home Page</a></h3>
+    {% for customer in all_customer %}
+        <div>
+            {% if customer.gender == 0 %}
+                <img src="../static/image/female-profile.jpg" alt=" Ảnh nóng ">
+            {% else %}
+                <img src="../static/image/male-profile.jpg" alt=" Ảnh nóng ">
+            {% endif %}
+            <br>
+            <b>Name: {{customer.name}} </b>
+            {% if customer.gender == 0 %}
+                <p>Gender: Female </p>
+            {% else %}
+                <p>Gender: Male </p>
+            {% endif %}
+            <p>Email: {{customer.email}} </p>
+            <p>Phone: {{customer.phone}} </p>
+            <p>Job: {{customer.job}} </p>
+            <p>Company: {{customer.company}} </p>
+            {% if customer.contacted == True %}
+                <p>Contacted: Đã liên lạc</p>
+            {% else %}
+                <p>Contacted: Chưa liên lạc</p>
+            {% endif %}
+            <hr>
+        </div>
+    {% endfor %}
+</body>
+</html>

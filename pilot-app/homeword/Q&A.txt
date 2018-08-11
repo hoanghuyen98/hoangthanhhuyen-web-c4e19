@@ -1,0 +1,6 @@
+Are there any duplicate ids in the records?
+- Nope !!
+If no, why? Guess what information this is field represents and its implication/application
+Note: There will be more than one answers and your answers don’t need to be perfect
+- Vì nó là khóa chính, dùng để phân biệt người này với người kia , nên mỗi người sẽ chỉ có một id duy nhất.
+giúp cho cơ sở dữ liệu trở nên hiệu quả hơn, không gây trùng lặp, mất mát thông tin hay thừa thông tin. Dễ quản lý hơn

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Warm Winter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1> Sửa thông tin </h1>
+    <form action=" {{url_for('update', service_id = service.id)}} " method="post">
+        <label>Tên: </label>
+        <input type="text" name="name" value="{{service.name}}">
+        <br>
+        <label>Tuổi: </label>
+        <input type="text" name="yob" value="{{service.yob}}">
+        <br>
+        <label>Số điện thoại: </label>
+        <input type="text" name="phone" value="{{service.phone}}">
+        <br>
+        <label>Chiều cao: </label>
+        <input type="text" name="height" value="{{service.height}}">
+        <br>
+        <label>Địa chỉ: </label>
+        <input type="text" name="address" value="{{service.address}}">
+        <!-- <label>Tình trạng quan hệ: </label>
+        <input type="text" name="status" value="{{service.status}}"> -->
+        <br>
+        <br>
+        <input type="submit" value="Cập nhật">
+    </form>
+</body>
+</html>

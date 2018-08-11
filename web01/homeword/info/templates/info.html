@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Personal information</h1>
+    {% for info in info_personal %}
+    <div>
+        
+        <h2>{{ info.name }}</h2>
+        <h3>{{ info.work }}</h3>
+        <h3>{{ info.school }}</h3>
+        <h3>{{ info.hobbies }}</h3>
+        <h3>{{ info.crush }}</h3>
+       
+    </div>
+    {% endfor %}
+
+</body>
+</html>

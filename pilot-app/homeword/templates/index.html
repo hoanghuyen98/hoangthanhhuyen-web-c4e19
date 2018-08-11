@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Warm Winter</title>
+</head>
+<body>
+    <h1>Warm Winter</h1>
+    <a href=" {{url_for('search', gender= 1)}} "> Bạn muốn tìm nam ? </a>
+    <br>
+    <a href=" {{url_for('search', gender= 0)}} "> Bạn muốn tìm nữ ? </a>
+    <h3><a href=" {{url_for('customer')}} "> Danh sách khách hàng đã đăng ký thành công </a></h3>
+    <h3><a href=" {{url_for('search_customer')}} ">10 khách hàng nam chưa tiếp xúc</a></h3>
+</body>
+</html>

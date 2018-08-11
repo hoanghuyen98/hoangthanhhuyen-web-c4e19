@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <h1>C4E Blog</h1>
+    {% for post in posts %}
+        <div class="index"></div>
+        <div>
+            <!-- jinja2 -->
+            <h3>{{ post.title }}</h3>
+            <i>By: 
+                <!-- contional Expression : biểu thức điều kiện -->
+                {{ "Mr" if post.gender == 1 else "Miss" }}
+                {{ post.author }}
+            </i>
+            <p>
+                {{ post.content }}
+            </p>   
+            <hr>   
+        </div>
+    {% endfor %}
+
+    <!-- <div>
+        <i>By: Hoàng Huyền</i>
+        <h3>Tuấn Anh </h3>
+        <p>
+            Phát ngôn gây sốc
+            <br>
+            Stt đậm chất khó hiểu
+        </p>
+        <hr>
+    </div>
+
+    <div>
+        <i>By: Diệu</i>
+        <h3>Vội vàng</h3>
+        <p>
+            Tôi muốn tắt nắng đi 
+            <br>
+            Cho màu đừng nhạt mất
+        </p>
+        <hr>
+    </div> -->
+
+    
+</body>
+</html>
