@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'meta-data.html' %}
 </head>
 <body>
-    <h1>Mùa đông không lạnh</h1>
-    <!-- Lấy link -->
-    <a href="{{ url_for('search', gender= 1) }}">Bạn muốn tìm nam?</a> 
-    <br>
-    <a href="{{ url_for('search', gender= 0) }}">Bạn muốn tìm nữ</a>
+    {% include 'homepage/navigation.html'%}
+    {% include 'homepage/carousel.html' %}
+    {% include 'homepage/welcome.html' %}
+    {% include 'homepage/choose.html' %}
+    {% include 'homepage/end_web.html' %}
+    {% include 'homepage/footer.html' %}
 </body>
 </html>

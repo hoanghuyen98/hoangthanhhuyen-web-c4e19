@@ -1,0 +1,214 @@
+.font-lobster {
+    font-family: 'Lobster Two', cursive;
+}
+
+.mb-250px{
+    margin-bottom: 250px;
+}
+
+.bg-img-female {
+    background-image: url(../image/female.jpg);
+    background-size: cover;
+}
+
+.bg-img-male {
+    background-image: url(../image/male.jpg);
+    background-size: cover;
+}
+
+.h-150 {
+    height: 150px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.h-650 {
+    height: 650px;
+}
+
+.bg-img-night {
+    background-image: url("../image/night.jpg");
+    background-size: cover;
+}
+
+.mtb-100px{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+.h-200px {
+    height: 200px;
+}
+
+.w-200px {
+    width: 200px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.m-3 {
+    margin:  30px;
+}
+
+.font-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.mb-250{
+    margin-bottom: 250px;
+}
+
+.mb-300{
+    margin-bottom: 300px;
+}
+
+.h-20{
+    height: 20%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.mb-300px{
+    margin-bottom: 300px;
+}
+
+.mb-100px{
+    margin-bottom: 100px;
+}
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.pl-50px{
+    padding-left: 50px;
+}
+.mr-5px{
+    margin-right: 5px;
+}
+.ml-5px{
+    margin-left: 5px;
+}
+.mr-10px{
+    margin-right: 10px;
+}
+.mr-20px{
+    margin-right: 20px;
+}
+.mr-50px{
+    margin-right: 50px;
+}
+.mr-70px{
+    margin-right: 70px;
+}
+.mtb-50px{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mb-50px{
+    margin-bottom: 50px;
+}
+#flex{
+    display: flex;
+    justify-content: space-around;
+}
+#center{
+    display: flex;
+    justify-content: center;
+}
+.h-300px{
+    height: 300px;
+}
+.w-40{
+    width: 40%;
+}
+.w-90{
+    width: 90%;
+}
+.w-95{
+    width: 95%;
+}
+.h-101px{
+    height: 101px;
+}
+.h-200px{
+    height: 200px;
+}
+.w-100px{
+    width: 200px;
+}
+.w-15{
+    width: 15%;
+}
+.w-30{
+    width: 30%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-80{
+    width: 80%;
+}
+.w-20{
+    width: 20%;
+}
+.m-40px{
+    margin-right: 40px;
+}
+
+.h-60px{
+    height: 60px;
+}
+
+.h-450px{
+    height: 450px;
+}
+
+.h-20{
+    height: 20%;
+}
+
+.h-30{
+    height: 30%;
+}
+
+.h-50{
+    height: 50%;
+}
+
+.h-70{
+    height: 70%;
+}
+
+.h-80{
+    height: 80%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.h-60{
+    height: 60%;
+}
+
+.w-30{
+    width: 30%;
+}
+.img-fit{
+    width: inherit;
+    height: inherit;
+    border: 3px solid;
+    border-color: white;
+}

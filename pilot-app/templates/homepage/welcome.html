@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Warm Winter</title>
+</head>
+<body>
+    <div class="container mtb-100px ">
+        <h2 class="text-center">
+            Chào mừng các bạn đã đến với mùa đồng không lạnh
+        </h2>
+        <h4 class="text-center font-lobster">
+            "Chúng tôi ở đây là để giúp cho bạn có mối quan hệ tốt đẹp với gia đình người 
+            thân trong khi vẫn giữ được sự tự do và riêng tư, 
+            cũng như quyết định của bản thân bạn"
+        </h4>
+        <div class="h-150 container d-flex justify-content-between">
+            <div class="bg-img-female h-150 w-30 d-flex justify-content-end align-items-center container"> 
+                <a href="{{url_for('search', gender = 1)}}" class="btn btn-success text-light font-weight-bold">Bạn là nam</a>
+            </div>
+            <div class="bg-img-male h-150 w-30 d-flex justify-content-start align-items-center container"> 
+                <a href="{{url_for('search', gender = 0)}}" class="btn btn-success text-light font-weight-bold">Bạn là nữ</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

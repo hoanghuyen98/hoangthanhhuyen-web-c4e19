@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mùa đông không lạnh</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <h1>Search page </h1>
-    {% for service in all_service %}
-    <div>
-        <!-- tạo ảnh -->
-        {% if service.gender == 1 %}
-            <img src="../static/image/male-profile.jpg" > 
-        {% else %}
-            <img src="../static/image/female-profile.jpg">
-        {% endif%}
-        <br>
-        <b>Tên: {{service.name}}</b>
-        <p>Năm sinh: {{service.yob}}</p>
-        <p>Chiều cao: {{service.height}}</p>
-        <p>Địa chỉ: {{service.address}}</p>
-        <hr>
-    </div>
-    {% endfor%}
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Database intro </title>
+    {% include "meta-data.html" %}
+    <link rel="stylesheet" href="../static/css/search.css">
+  </head>
+  <body>
+    {% include "homepage/navigation.html" %}
+
+    {% include "search/search_info.html" %}
+
+    
+  </body>
 </html>
