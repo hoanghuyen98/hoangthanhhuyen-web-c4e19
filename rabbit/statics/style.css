@@ -1,0 +1,28 @@
+.m-100px {
+    margin: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.size-100px {
+    size: 100px;
+}
+#tem {
+    font-family: 'Jua', sans-serif;
+    font-family: 'Cabin', sans-serif;
+}
+.d-inline-block {
+    display: inline-block;
+}
+
+.img-center {
+    image:center;
+}
+
+.h-300 {
+    height: 400px;
+}
+
+.w-900 {
+    width: 100%;
+}
